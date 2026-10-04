@@ -1,48 +1,43 @@
 <!doctype html>
-<html>
+<html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>CollegeRoutineTrack</title>
+    <meta charset="UTF-8">
+    <title>CollegeRoutineTrack</title>
 
-<style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;600;700&display=swap" rel="stylesheet">
 
-body { margin: 0; 
-	   padding: 0; 
-	    }
-
-a:link, a:visited { color: black; 
-					text-decoration: none;
-				    font-size: 30px; }
-
-a:hover { text-decoration: underline;
-		  }
-
-a:active { color: black; }
-
-
-
-
-</style>
+    <link rel="stylesheet" href="style.css">
+    <!--
+    AI Use Disclosure: 
+    Tool(s): ChatGPT
+    Purpose: Helped explain CSS concepts, troubleshoot CSS errors, and provided guidance on typography, spacing alignment, and visual hierarchy. Human Role: I made the design decisions for my website, applied the CSS to my project, tested the results, and modified the code to fit my website.
+    -->
 </head>
 
+
 <body>
+
 	<h1>College Routine Tracker</h1>
-	<h1> Plan and track your daily college routine</h1>
+	<h2> Plan and track your daily college routine</h2>
+		<img src="dailyplanimage.jpg" alt="Daily Plan Image">
 	
-<img src="dailyplanimage.jpg" alt="Daily Planner Image">
+
 	
-	<h2>Navigation</h2>
-	<nav>
-	<ul> 
-		<li>Home</li>
-		<li>Today's Routine </li>
-		<li>Add Routine</li>
-	</ul>
+	<h3>Navigation</h3>
+
+<nav>
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#routine">Today's Routine</a></li>
+        <li><a href="#add">Add Routine</a></li>
+    </ul>
 </nav>
 
 <main>
-	<section> 
-		<h3> Today's Routine</h3>
+	<section id="routine"> 
+		<h4> Today's Routine</h4>
 	
 <ul> 
 	<li>8:00AM- Wake up</li>
@@ -58,14 +53,15 @@ a:active { color: black; }
 </ul>
 </section>
 </main>
-	<h3> Add your own routine</h3>
+	<section id="add">
+	 <h3> Add your own routine</h3>
 	<form>
-		Your daily college schedule
+		<p>Your daily college schedule</p>
 		<ul> 
 			<li>Activity: <input type="text" name="Activity"></li>
   <li>Time: <input type="text" name="time"></li>
   <li>
-  	<label for="Category">Category:</label>
+  	<label for="category">Category:</label>
   		<select id="category">
   	<option>Class</option>
   	<option>Studying</option>
@@ -80,8 +76,12 @@ a:active { color: black; }
   <li>Add Activity:<br>
     <textarea name="Add Activity"></textarea></li>
 </ul>
-	<section>
-	<h4>Routine Categories</h4>
+</form>
+</section> 
+
+	<section id="categories">
+
+	<h3>Routine Categories</h3>
 	<ul>
 		<li>Classes</li>
 		<li>Meals</li>
@@ -94,9 +94,6 @@ a:active { color: black; }
 		<li>Personal</li>
 	</ul>
 </section>
-
-	<p>If you need advice on managing your time, look <a href="https://summer.harvard.edu/blog/8-time-management-tips-for-students/#1-Create-a-Calendar">here</a> for help!</p>
-
 
 <footer> 
 	<p>College Routine Tracker</p>
